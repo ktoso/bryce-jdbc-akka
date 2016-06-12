@@ -18,7 +18,7 @@ libraryDependencies ++= {
     "com.typesafe.akka" %% "akka-persistence" % akkaVersion,
     "com.typesafe.akka" %% "akka-cluster" % akkaVersion,
     "com.typesafe.akka" %% "akka-cluster-sharding" % akkaVersion,
-    "com.github.dnvriend" %% "akka-persistence-jdbc" % "2.3.1",
+    "com.github.dnvriend" %% "akka-persistence-jdbc" % "2.3.2",
     "ch.qos.logback" % "logback-classic" % "1.1.7",
     "org.postgresql" % "postgresql" % "9.4.1208"
   )
