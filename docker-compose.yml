@@ -1,0 +1,23 @@
+postgres-normal:
+  image: postgres:latest
+  container_name: postgres-normal
+  environment:
+    - "TZ=Europe/Amsterdam"
+    - "POSTGRES_USER=docker"
+    - "POSTGRES_PASSWORD=docker"
+  ports:
+    - "5432:5432"  # credentials (docker:docker)
+  volumes:
+    - "./initdb:/docker-entrypoint-initdb.d"
+
+postgres-sharding:
+  image: postgres:latest
+  container_name: postgres-sharding
+  environment:
+    - "TZ=Europe/Amsterdam"
+    - "POSTGRES_USER=docker"
+    - "POSTGRES_PASSWORD=docker"
+  ports:
+    - "5433:5432"  # credentials (docker:docker)
+  volumes:
+    - "./initdb:/docker-entrypoint-initdb.d"
